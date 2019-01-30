@@ -1,0 +1,20 @@
+// Typography
+$font-family: 'Roboto', sans-serif;
+
+$color-primary      : #d32f2f;
+$color-secondary    : #1f1f1f;
+
+$color-white        : #ffffff;
+$color-grey         : #ECECEC;
+
+$color-warning      : #fdd835;
+$color-error        : #dd2c00;
+$color-acepted      : #2e7d32;
+
+$small              : 950px;
+$max-width          : 1320px;
+
+
+@media only screen and (max-width: $small){
+    $max-width          : 100%;   
+}

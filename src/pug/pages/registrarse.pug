@@ -1,0 +1,119 @@
+extends ../config/template
+append config
+  -pageTitle = 'Registrarse'
+  -pageDescription = 'Registrate y empieza tu periodo de prueba gratuito'
+  -pageImage = 'assets/svg/commande-logo.svg'
+
+block main
+  include ../includes/main-menu
+  img.img__absolute(src="assets/img/registro.png", alt="registro")
+  .container.form__container
+    .content.margin-bottom
+        h2.mdc-typography--headline2.color-primary ¡Regístrate!
+        h4.mdc-typography--headline4 Y empieza tu periodo de prueba gratuito.
+        .form
+            .form__box.form__box__general-data
+                h5.mdc-typography--headline5 Información General
+                .grid-2-col
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-registro-nombre">
+                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required aria-controls="username-helper-text" aria-describedby="username-helper-text">
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Nombre completo</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p id="username-helper-text" class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Campo obligatorio</p>
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-form-correo">
+                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required>
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Correo</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Campo obligatorio</p>
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-form-pass">
+                          <input type="password" id="tf-outlined" class="mdc-text-field__input" required>
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Contraseña</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Campo obligatorio</p>
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-form-confirm-pass">
+                          <input type="password" id="tf-outlined" class="mdc-text-field__input" required>
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Confirmar contraseña</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Campo obligatorio</p>
+            .form__box.form__box__restorant-data.margin-bottom
+                h5.mdc-typography--headline5 Selecciona tu restaurant o bar.
+                .grid-2-col
+                
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-form-local">
+                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required>
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Nombre de local</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Debería aparecer en el mapa</p>
+
+                    .form__google-maps
+                    .text-field
+                        <div class="mdc-text-field mdc-text-field--outlined js-form-mesas">
+                          <input type="number" id="tf-outlined" class="mdc-text-field__input" required>
+                          <div class="mdc-notched-outline">
+                            <div class="mdc-notched-outline__leading"></div>
+                            <div class="mdc-notched-outline__notch">
+                              <label for="tf-outlined" class="mdc-floating-label">Cantidad de mesas</label>
+                            </div>
+                            <div class="mdc-notched-outline__trailing"></div>
+                          </div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">*Ingresa el número de mesas que tu local posee</p>
+
+            .form__box.flex-col-ss
+                <div class="mdc-form-field padding-1-0">
+                  <div class="mdc-checkbox">
+                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1"/>
+                    <div class="mdc-checkbox__background">
+                      svg(class="mdc-checkbox__checkmark" viewBox="0 0 24 24") 
+                        path(class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59")
+                      <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                  </div>
+                  <label for="checkbox-1">Acepto los términos y condiciones</label>
+                </div>
+                button.margin-bottom(href="" class="mdc-button mdc-button mdc-button--unelevated mdc-button--primary")
+                    span(class="mdc-button__label") Registrarme
+                
+                p.mdc-typography--caption Registrándote estás de acuerdo con los términos y condiciones de uso de COMMANDE app y con las siguientes indicaciones correspondientes a tu registro:
+                p.mdc-typography--caption Tu email de usuario y contraseña deben saberlo tus empleados. Utiliza estos campos con responsabilidad.
+                p.mdc-typography--caption En el campo de Nombre puede ir el nombre de tu Restaurant.
+                p.mdc-typography--caption Al aceptar estas condiciones indicas que eres el dueño/manager del restaurant.
+block footer
+  include ../includes/footer
+        
+

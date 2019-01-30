@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+@import "@material/typography/mdc-typography";
+
+@media only screen and (max-width: $small){
+    .mdc-typography--headline2{
+        font-size: 2.2em;
+        line-height: 1.5em;
+        padding-bottom: 24px;
+    }
+}
+
+

@@ -1,0 +1,36 @@
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
+
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+
+.mdc-text-field--outlined{
+    @include mdc-text-field-focused-outline-color($color-primary);
+    @include mdc-text-field-hover-outline-color($color-primary);
+    @include mdc-text-field-label-color($color-primary);
+}
+
+.form__box{
+    h5{ 
+        padding-top: 1em;
+        padding-bottom: .5em;  
+    }
+}
+
+.form__container{
+    max-width: 550px;
+    padding: 5em 2em;
+}
+.form__google-maps{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background-color: $color-grey;
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+
+.margin-bottom{
+    margin-bottom: 1em;
+}

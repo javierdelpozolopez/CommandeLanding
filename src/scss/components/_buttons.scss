@@ -1,0 +1,25 @@
+
+@import "@material/button/mdc-button";
+
+.botton{
+    @include mdc-button-filled-accessible($color-primary);
+}
+.btn-outline-invert{
+    @include mdc-button-ink-color($color-white);
+    @include mdc-button-outline-color($color-white);
+}
+
+.card__action--premium{
+    @include mdc-button-filled-accessible($color-white);
+    @include mdc-button-ink-color($color-primary);
+}
+
+.mdc-button--invert{
+    @include mdc-button-filled-accessible($color-white);
+    @include mdc-button-ink-color($color-primary);
+}
+
+.mdc-button--primary{
+    @include mdc-button-filled-accessible($color-primary);
+    @include mdc-button-ink-color($color-white);
+}

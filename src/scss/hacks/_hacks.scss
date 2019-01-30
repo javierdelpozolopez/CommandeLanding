@@ -1,0 +1,21 @@
+.color-primary {
+    color: $color-primary;
+}
+
+.margin-bottom{
+    margin-bottom: 1em;
+}
+
+.img__absolute{
+    position: absolute;
+    top: 100px;
+    width: 20%;
+    right: 0%;
+    @media only screen and (max-width: $small){
+        display: none;
+    }
+}
+
+.padding-1-0{
+    padding: 1em 0;
+}

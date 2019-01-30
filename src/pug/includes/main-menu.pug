@@ -1,0 +1,14 @@
+.main-top-bar__container
+  .main-top-bar__content
+    .branding
+      img(src="assets/svg/commande-logo.svg", alt="logo commande")
+    .hamburger__box#js-hamburger-box
+    nav.main-menu(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
+      ul
+        each page in pages
+          li.main-menu__item(itemprop="url")
+              a.main-menu__link(href=page.url itemprop="name" class=page.class)= page.title
+                if page.child.length > 0
+                  ul 
+                    each page2 in page.child
+                      li: a(href= page2.url)= page2.title

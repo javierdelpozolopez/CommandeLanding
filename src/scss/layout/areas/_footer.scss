@@ -1,0 +1,52 @@
+.footer{
+    &__container{
+        padding: 60px 1em 60px 1em;
+        background-color: $color-primary;
+    }
+    &__content{
+        @media only screen and (max-width: $small){
+            padding: 1em;
+        }
+    }
+    &__logo{
+        padding-bottom: 1em;
+    }
+    &__action{
+        padding-bottom: 1em;
+    }
+    &__rrss{
+        padding-bottom: 1em;
+        a{
+            padding-left: 10px;
+        }
+        img{
+            transition: transform .2s ease;
+            &:hover{
+                transform: scale(1.2,1.2);
+            }
+        }
+    }
+    &__link{
+        margin-right: 14px;
+    }
+    &__box{
+        color: $color-white;
+    }
+    &__box--two{
+        @include flex(column,flex-end,flex-start);
+        @media only screen and (max-width: $small){
+        align-items: flex-start;
+        }
+    }
+    &__contact{
+        color: $color-white;
+        text-align: end;
+        a{
+            text-decoration: none;
+            color: $color-white;
+        }
+        @media only screen and (max-width: $small){
+        text-align: start;
+        }
+    }
+}

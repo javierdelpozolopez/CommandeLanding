@@ -1,0 +1,59 @@
+.main-top-bar{
+
+    &__container{
+        background-color: $color-primary;
+        padding: 0 0 0 1em;
+        @include flex(row,center,space-around);
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    &__content{
+        @include flex(row,center,space-between);
+        max-width: $max-width;
+        padding: 0em;
+        margin: 0 auto;
+        width: 100%;
+        @media only screen and (max-width: $small){
+            padding: 0 1em;
+        }
+    }
+}
+
+.main-menu{
+    & ul{
+        @include flex(row,flex-end,flex-end);
+    }
+    &__item{
+        list-style: none;
+        padding: 8px 4px;
+        .mdc-button{
+            @include mdc-button-ink-color($color-white);
+        }
+        .mdc-button--outlined {
+            @include mdc-button-ink-color($color-white);
+            @include mdc-button-outline-color($color-white);
+        }
+        .mdc-button--unelevated{
+            @include mdc-button-filled-accessible($color-white);
+            @include mdc-button-ink-color($color-primary);
+        }
+    }
+    @media only screen and (max-width: $small){
+    position: absolute;
+    background-color: $color-secondary;
+    top: 60px;
+    left: 0%;
+    width: 90vw;
+    height: calc(100vh-60px);
+    transform: translateX(-100%);
+    &__active{
+        transform: translateX(0%);
+        z-index: 100;
+    }
+        & ul{
+            @include flex(column,flex-start,flex-start);
+        }
+    }
+}
