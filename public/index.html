@@ -9,7 +9,7 @@
     <meta property="og:title" content="Commande">
     <meta property="og:description" content="Pagina inicial de Commande">
     <meta property="og:image" content="assets/svg/commande-logo.svg">
-    <link rel="stylesheet" href="assets/css/styles.css?t=1548822399054">
+    <link rel="stylesheet" href="assets/css/styles.css?t=1548990930006">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
@@ -20,57 +20,45 @@
         <nav class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
           <ul>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="index.html" itemprop="name">Inicio</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="index.html#nosotros" itemprop="name">Nosotros</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="index.html#precios" itemprop="name">Precios</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="#nosotros" itemprop="name">Nosotros</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="#precios" itemprop="name">Precios</a></li>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="/registrarse.html" itemprop="name">Registrarse</a></li>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button mdc-button--outlined" href="/" itemprop="name">Iniciar Sesión</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button mdc-button--unelevated" href="/contacto.html" itemprop="name">Contacto</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button mdc-button--unelevated" href="./#contacto" itemprop="name">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="main__container">
-      <div class="main__deco"></div>
-      <div class="main__content">
-        <div class="main__title">
-          <h2 class="mdc-typography--headline2">Sabemos la importancia de tener clientes felices</h2>
+    <div class="container main__container">
+      <div class="content main__content flex-col-cc">
+        <div class="main__title text-center">
+          <h2 class="mdc-typography--headline2">Mejora la comunicación efectiva<br>con tus comensales</h2>
+          <p class="mdc-typography--body1">Somos un software para la gestión de solicitudes en restaurantes, bares y cafés,</p>
+          <p class="mdc-typography--body1">además podrás conocer a tus clientes y ofrecer atención personalizada.</p>
         </div>
-        <div class="main__img"></div>
-        <div class="main__info">
-          <h5 class="mdc-typography--headline5">Administra fácilmente todas las solicitudes de tus comensales y fidelízalos para que vuelvan una y otra vez.   </h5>
-          <button class="botton mdc-button mdc-button--unelevated"><span class="mdc-button__label">Pide un Demo</span></button>
-        </div>
-        <div class="main__none"></div>
+        <div class="main__image"><img class="smartphone" src="assets/img/smartphone.jpg" alt="smartphone"><img class="main__image__img float" src="assets/img/float-cards.png" alt="float-cards"></div>
       </div>
     </div>
-    <div class="nosotros__container">
-      <div class="nosotros__content">
-        <div class="nosotros__title">
-          <h2 class="mdc-typography--headline2">Conoce lo que puedes hacer con nosotros.</h2>
+    <div class="container clients__container">
+      <div class="content">
+        <div class="text-center">
+          <h5 class="mdc-typography--headline5">Encuentra nuestros QR's en...</h5>
         </div>
-        <div class="nosotros__tab-bar"></div>
-        <div class="nosotros__box">
-          <div class="nosotros__text">
-            <h5 class="mdc-typography--headline5">Mantén el orden y la gestión de tu restorant, bar o local de comida de forma fácil, eficiente y organizada.</h5>
-            <h4 class="mdc-typography--headline4">¡Mira el video!</h4>
-          </div>
-          <div class="nosotros__video">
-            <iframe width="720" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
+        <div class="grid-4-col"><img src="assets/img/protobar.png" alt="Protobar"><img src="assets/img/saratoga.png" alt="Saratoga"><img src="assets/img/pacto-arte-bar.png" alt="Pacto bar"><img src="assets/img/insert-coin.png" alt="Insert Coin"></div>
       </div>
     </div>
-    <div class="container">
-      <div class="content flex-col-cc">
-        <div class="content-float-images"><img class="float-img float-img__smartphone" src="assets/img/smartphone.jpg" alt="smartphone"><img class="float-img" src="assets/img/float-cards.png" alt="float-cards"></div>
-        <div class="center-text">
-          <h2 class="mdc-typography--headline2">Mantén a tus clientes felices</h2>
-          <h5 class="mdc-typography--headline5">y sin hacerlos esperar demás, diles exactamente cuanto te demorarás en atender su solicitud y recibe feedback de inmediato.</h5>
+    <div class="container bg-color-secondary" id="nosotros">
+      <div class="content flex-col-cc text-center">
+        <h4 class="mdc-typography--headline4 margin-bottom">Descubre cómo funciona y lo fácil que es</h4>
+        <div class="nosotros__video margin-bottom">
+          <iframe width="940" height="529" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <button class="botton mdc-button mdc-button--unelevated"><span class="mdc-button__label">Pide un Demo</span></button>
       </div>
     </div>
     <div class="container">
       <div class="content">
+        <h4 class="mdc-typography--headline4 text-center margin-bottom">Fideliza a tus comensales ¡Hazlos volver!  </h4>
         <div class="grid-3-col">
           <div class="box flex-col-ss"><img src="assets/img/analitica.png" alt="">
             <pre class="mdc-typography--caption">ESTADÍSTICAS Y ANÁLITICA</pre>
@@ -90,22 +78,10 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container price__container" id="precio">
       <div class="content">
-        <div class="center-text">
-          <h2 class="mdc-typography--headline2">Encuentra nuestros QR's en...</h2>
-        </div>
-      </div>
-    </div>
-    <div class="container clients__container">
-      <div class="content">
-        <div class="grid-4-col"><img src="assets/img/protobar.png" alt="Protobar"><img src="assets/img/saratoga.png" alt="Saratoga"><img src="assets/img/pacto-arte-bar.png" alt="Pacto bar"><img src="assets/img/insert-coin.png" alt="Insert Coin"></div>
-      </div>
-    </div>
-    <div class="container price__container">
-      <div class="content">
-        <div class="center-text price__title">
-          <h2 class="mdc-typography--headline2">PRECIOS</h2>
+        <div class="text-center price__title">
+          <h4 class="mdc-typography--headline4">PRECIOS</h4>
         </div>
         <div class="card__content">
           <div class="card card--normal">
@@ -149,6 +125,63 @@
         </div>
       </div>
     </div>
+    <div class="container form__container bg-color-secondary" id="contacto">
+      <div class="content">
+        <div class="grid-2-col no-gap">
+          <div class="content form__content bg-color-white">
+            <h4 class="mdc-typography--headline4 color-primary">¡Escríbenos!</h4>
+            <h5 class="mdc-typography--headline5 margin-bottom">Queremos conocerte.</h5>
+            <div class="form__box flex-col-ss"><div class="mdc-text-field mdc-text-field--outlined js-contact-nombre margin-bottom">
+<input type="text" id="tf-outlined" class="mdc-text-field__input" required>
+<div class="mdc-notched-outline">
+<div class="mdc-notched-outline__leading"></div>
+<div class="mdc-notched-outline__notch">
+<label for="tf-outlined" class="mdc-floating-label">Nombre completo</label>
+</div>
+<div class="mdc-notched-outline__trailing"></div>
+</div>
+</div>
+<div class="mdc-text-field mdc-text-field--outlined js-contact-telefono margin-bottom">
+<input type="text" id="tf-outlined" class="mdc-text-field__input" required>
+<div class="mdc-notched-outline">
+<div class="mdc-notched-outline__leading"></div>
+<div class="mdc-notched-outline__notch">
+<label for="tf-outlined" class="mdc-floating-label">Teléfono</label>
+</div>
+<div class="mdc-notched-outline__trailing"></div>
+</div>
+</div>
+<div class="mdc-text-field mdc-text-field--outlined js-contact-correo margin-bottom">
+<input type="text" id="tf-outlined" class="mdc-text-field__input" required>
+<div class="mdc-notched-outline">
+<div class="mdc-notched-outline__leading"></div>
+<div class="mdc-notched-outline__notch">
+<label for="tf-outlined" class="mdc-floating-label">Correo</label>
+</div>
+<div class="mdc-notched-outline__trailing"></div>
+</div>
+</div>
+<div class="mdc-text-field mdc-text-field--textarea js-contact-mensaje margin-bottom">
+<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+<div class="mdc-notched-outline">
+<div class="mdc-notched-outline__leading"></div>
+<div class="mdc-notched-outline__notch">
+<label for="textarea" class="mdc-floating-label">Mensaje</label>
+</div>
+<div class="mdc-notched-outline__trailing"></div>
+</div>
+</div>
+              <button class="margin-bottom mdc-button mdc-button mdc-button--unelevated mdc-button--primary" href=""><span class="mdc-button__label">ENVÍAR</span></button>
+            </div>
+          </div>
+          <div class="content contact__content bg-color-primary text-center">
+            <h6 class="mdc-typography--headline6">O si prefieres contáctanos directamente a:</h6><img class="contact__img" src="assets/img/celular.png" alt="celular">
+            <p class="mdc-typography--headline5">+56 9 8201 8757 </p><img class="contact__img" src="assets/img/correo.png" alt="correo">
+            <p class="mdc-typography--headline5">contacto@commandeapp.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container footer__container">
         <div class="content footer__content">
@@ -168,6 +201,6 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/scripts-min.js?t=1548822399054"></script>
+    <script src="assets/js/scripts-min.js?t=1548990930006"></script>
   </body>
 </html>

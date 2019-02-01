@@ -6,42 +6,36 @@ append config
 
 block main
   include ../includes/main-menu
-  .main__container
-    .main__deco
-    .main__content
-      .main__title
-        h2.mdc-typography--headline2 Sabemos la importancia de tener clientes felices
-      .main__img
-      .main__info
-        h5.mdc-typography--headline5 Administra fácilmente todas las solicitudes de tus comensales y fidelízalos para que vuelvan una y otra vez.   
+  .container.main__container
+    .content.main__content.flex-col-cc
+      .main__title.text-center
+        h2.mdc-typography--headline2 Mejora la comunicación efectiva<br>con tus comensales
+        p.mdc-typography--body1 Somos un software para la gestión de solicitudes en restaurantes, bares y cafés,
+        p.mdc-typography--body1 además podrás conocer a tus clientes y ofrecer atención personalizada.
+      .main__image
+        img.smartphone(src="assets/img/smartphone.jpg", alt="smartphone")
+        img.main__image__img.float(src="assets/img/float-cards.png", alt="float-cards")
+  .container.clients__container
+    .content
+      .text-center
+        h5.mdc-typography--headline5 Encuentra nuestros QR's en...
+      .grid-4-col
+          img(src="assets/img/protobar.png", alt="Protobar")
+          img(src="assets/img/saratoga.png", alt="Saratoga")
+          img(src="assets/img/pacto-arte-bar.png", alt="Pacto bar")
+          img(src="assets/img/insert-coin.png", alt="Insert Coin")
+
+  .container.bg-color-secondary#nosotros
+    .content.flex-col-cc.text-center
+        h4.mdc-typography--headline4.margin-bottom Descubre cómo funciona y lo fácil que es
+        .nosotros__video.margin-bottom
+          iframe(width="940" height="529" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         button(class="botton mdc-button mdc-button--unelevated")
           span(class="mdc-button__label") Pide un Demo
-      .main__none
-
-  .nosotros__container
-    .nosotros__content
-      .nosotros__title
-        h2.mdc-typography--headline2 Conoce lo que puedes hacer con nosotros.
-      .nosotros__tab-bar
-      .nosotros__box
-        .nosotros__text
-         h5.mdc-typography--headline5 Mantén el orden y la gestión de tu restorant, bar o local de comida de forma fácil, eficiente y organizada.
-         h4.mdc-typography--headline4 ¡Mira el video!
-        .nosotros__video
-          iframe(width="720" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-
-
-  .container
-    .content.flex-col-cc
-      .content-float-images
-        img.float-img.float-img__smartphone(src="assets/img/smartphone.jpg", alt="smartphone")
-        img.float-img(src="assets/img/float-cards.png", alt="float-cards")
-      .center-text
-        h2.mdc-typography--headline2 Mantén a tus clientes felices
-        h5.mdc-typography--headline5 y sin hacerlos esperar demás, diles exactamente cuanto te demorarás en atender su solicitud y recibe feedback de inmediato.
 
   .container
     .content
+      h4.mdc-typography--headline4.text-center.margin-bottom Fideliza a tus comensales ¡Hazlos volver!  
       .grid-3-col
         .box.flex-col-ss
           img(src="assets/img/analitica.png", alt="")
@@ -59,22 +53,10 @@ block main
           h5.mdc-typography--headline5 Registra cuanto tiempo esperan tus clientes para ser atendidos.
           p.mdc-typography--body1 No dejes que ningún cliente se vaya por que nunca recibió atención o fue mal atendido.
 
-  .container
+  .container.price__container#precio
     .content
-      .center-text
-        h2.mdc-typography--headline2 Encuentra nuestros QR's en...
-  .container.clients__container
-    .content
-      .grid-4-col
-        img(src="assets/img/protobar.png", alt="Protobar")
-        img(src="assets/img/saratoga.png", alt="Saratoga")
-        img(src="assets/img/pacto-arte-bar.png", alt="Pacto bar")
-        img(src="assets/img/insert-coin.png", alt="Insert Coin")
-
-  .container.price__container
-    .content
-      .center-text.price__title
-        h2.mdc-typography--headline2 PRECIOS
+      .text-center.price__title
+        h4.mdc-typography--headline4 PRECIOS
       .card__content
         .card.card--normal
           .card__title
@@ -104,7 +86,7 @@ block main
           .card__action
             button(class="card__action--premium mdc-button mdc-button--unelevated")
               span(class="mdc-button__label") SOLICITAR PREMIUM
-
+  include ../includes/contacto
 block footer
   include ../includes/footer
         

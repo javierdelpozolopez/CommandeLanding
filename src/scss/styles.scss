@@ -13,7 +13,9 @@
 // LAYOUT
   // Escribe solo los estilos de layout (division en regiones del viewport)
 @import "layout/layout";
-
+@import "layout/areas/main";
+@import "layout/areas/nosotros";
+@import "layout/areas/footer";
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
   // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
   // Crea los archivos adicionales que necesites (uno por componente)

@@ -1,63 +1,15 @@
 .main{
     &__container{
-        padding-top: 90px;
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        grid-template-rows: 40px 2fr 2fr 1fr;
-        grid-template-areas:
-        ". main ."
-        ". main ."
-        ". main deco"
-        ". main .";
-    }
-    &__content{
-        padding: 0 1em;
-        grid-area: main;
-        margin: 0 auto;
-        max-width: $max-width;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 40px 2fr 2fr 1fr;
-        grid-gap: 0px;
-        grid-template-areas:
-        ". . . . . . . . . . . ."
-         "title title title title title title img img img img img img"
-         "info info info info info info img img img img img img"
-         ". . . . . . img img img img img img";
-         @media only screen and (max-width: $small){
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: 10px 190px 1fr 1fr;
-            grid-template-areas:
-            ". . . . . ."
-            "title title title title title title"
-            "img img img img img img"
-            "info info info info info info"
-        }
+        padding-top: 100px;
     }
     &__title{
-        grid-area: title;
         padding-bottom: 3em;
         color: $color-primary;
         @media only screen and (max-width: $small){
             padding-bottom: 1em;
         }
     }
-    &__img{
-        grid-area: img;
-        justify-self: stretch;
-        z-index: 10;
-        background-image: url("../img/main-img.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media only screen and (max-width: $small){
-            width: 100%;
-        }
-    }
     &__info{
-        grid-area: info;
-        background-color: $color-secondary;
         padding: 4em 2em;
         color: white;
         h5{
@@ -71,9 +23,4 @@
             }
         }
     }
-}
-.main__deco{
-    grid-area: deco;
-    justify-self: stretch;
-    background-color: $color-secondary;
 }

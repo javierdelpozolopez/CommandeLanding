@@ -7,59 +7,7 @@ append config
 block main
   include ../includes/main-menu
   img.img__absolute(src="assets/img/registro.png", alt="registro")
-  .container.form__container
-    .content.margin-bottom
-        h2.mdc-typography--headline2.color-primary ¡Escríbenos!
-        h4.mdc-typography--headline4.margin-bottom Queremos conocerte.
-        .form__box.flex-col-ss
-            .text-field
-                <div class="mdc-text-field mdc-text-field--outlined js-contact-nombre margin-bottom">
-                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required>
-                          <div class="mdc-notched-outline">
-                            <div class="mdc-notched-outline__leading"></div>
-                            <div class="mdc-notched-outline__notch">
-                              <label for="tf-outlined" class="mdc-floating-label">Nombre completo</label>
-                            </div>
-                            <div class="mdc-notched-outline__trailing"></div>
-                          </div>
-                </div>
-            .text-field
-                <div class="mdc-text-field mdc-text-field--outlined js-contact-telefono margin-bottom">
-                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required>
-                          <div class="mdc-notched-outline">
-                            <div class="mdc-notched-outline__leading"></div>
-                            <div class="mdc-notched-outline__notch">
-                              <label for="tf-outlined" class="mdc-floating-label">Teléfono</label>
-                            </div>
-                            <div class="mdc-notched-outline__trailing"></div>
-                          </div>
-                </div>
-            .text-field
-                <div class="mdc-text-field mdc-text-field--outlined js-contact-correo margin-bottom">
-                          <input type="text" id="tf-outlined" class="mdc-text-field__input" required>
-                          <div class="mdc-notched-outline">
-                            <div class="mdc-notched-outline__leading"></div>
-                            <div class="mdc-notched-outline__notch">
-                              <label for="tf-outlined" class="mdc-floating-label">Correo</label>
-                            </div>
-                            <div class="mdc-notched-outline__trailing"></div>
-                          </div>
-                </div>
-            .text-field
-                <div class="mdc-text-field mdc-text-field--textarea js-contact-mensaje margin-bottom">
-                  <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
-                  <div class="mdc-notched-outline">
-                    <div class="mdc-notched-outline__leading"></div>
-                    <div class="mdc-notched-outline__notch">
-                      <label for="textarea" class="mdc-floating-label">Mensaje</label>
-                    </div>
-                    <div class="mdc-notched-outline__trailing"></div>
-                  </div>
-                </div>
-            button.margin-bottom(href="" class="mdc-button mdc-button mdc-button--unelevated mdc-button--primary")
-                span(class="mdc-button__label") ENVÍAR
-                
+       
 block footer
   include ../includes/footer
-        
 

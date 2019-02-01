@@ -7,8 +7,3 @@ body {
   margin: 0 auto;
   font-family: $font-family;
 }
-
-// solo para dev.
-img[src=""]{
-  background-color: $color-grey;
-}
