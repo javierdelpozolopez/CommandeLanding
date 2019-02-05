@@ -9,12 +9,14 @@ block main
   .container.main__container
     .content.main__content.flex-col-cc
       .main__title.text-center
-        h2.mdc-typography--headline2 Mejora la comunicación efectiva<br>con tus comensales
-        p.mdc-typography--body1 Somos un software para la gestión de solicitudes en restaurantes, bares y cafés,
-        p.mdc-typography--body1 además podrás conocer a tus clientes y ofrecer atención personalizada.
+        h2.mdc-typography--headline3 Comunicación efectiva con tus Commensales
+
       .main__image
         img.smartphone(src="assets/img/smartphone.jpg", alt="smartphone")
         img.main__image__img.float(src="assets/img/float-cards.png", alt="float-cards")
+      .main__subtitle.text-center
+        p.mdc-typography--body1 Software para la gestión de solicitudes en restaurantes, bares y cafés,
+        p.mdc-typography--body1 conoce mejor a tus comensales, atiendelos y fidelizalos.
   .container.clients__container
     .content
       .text-center
@@ -25,13 +27,15 @@ block main
           img(src="assets/img/pacto-arte-bar.png", alt="Pacto bar")
           img(src="assets/img/insert-coin.png", alt="Insert Coin")
 
-  .container.bg-color-secondary#nosotros
-    .content.flex-col-cc.text-center
-        h4.mdc-typography--headline4.margin-bottom Descubre cómo funciona y lo fácil que es
-        .nosotros__video.margin-bottom
-          iframe(width="940" height="529" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  .container.bg-color-secondary
+    .grid-2-col
+      .content.flex-col-sc
+        h4.mdc-typography--headline4.margin-bottom Descubre cómo funciona, <br> te va a encantar.
         button(class="botton mdc-button mdc-button--unelevated")
           span(class="mdc-button__label") Pide un Demo
+      .nosotros__video.margin-bottom
+        iframe(width="640" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
 
   .container
     .content
@@ -40,52 +44,20 @@ block main
         .box.flex-col-ss
           img(src="assets/img/analitica.png", alt="")
           pre.mdc-typography--caption ESTADÍSTICAS Y ANÁLITICA
-          h5.mdc-typography--headline5 Conoce a tu clientela y mejora tu relación con ellos.
-          p.mdc-typography--body1 Descubre los horarios en los que te visita, cuanto tiempo están disfrutando y crea promociones para que vuelvan una y otra vez.
+          h5.mdc-typography--headline6 Conoce a tu clientela y mejora tu relación con ellos.
+          p.mdc-typography--body2 Descubre los horarios en los que te visita, cuanto tiempo están disfrutando y crea promociones para que vuelvan una y otra vez.
         .box.flex-col-ss
           img(src="assets/img/promociones.png", alt="")
           pre.mdc-typography--caption PREMIOS Y PROMOCIONES
-          h5.mdc-typography--headline5 Crea promociones y fideliza a tus clientes.
-          p.mdc-typography--body1 Puedes crear promociones especiales a todos tus clientes o cada cantidad de visitas poder canjear premios y beneficios exclusivos.
+          h5.mdc-typography--headline6 Crea promociones y fideliza a tus clientes.
+          p.mdc-typography--body2 Puedes crear promociones especiales a todos tus clientes o cada cantidad de visitas poder canjear premios y beneficios exclusivos.
         .box.flex-col-ss
           img(src="assets/img/administracion.png", alt="")
           pre.mdc-typography--caption ADMINISTRACIÓN Y GESTIÓN
-          h5.mdc-typography--headline5 Registra cuanto tiempo esperan tus clientes para ser atendidos.
-          p.mdc-typography--body1 No dejes que ningún cliente se vaya por que nunca recibió atención o fue mal atendido.
+          h5.mdc-typography--headline6 Registra cuanto tiempo esperan tus clientes para ser atendidos.
+          p.mdc-typography--body2 No dejes que ningún cliente se vaya por que nunca recibió atención o fue mal atendido.
 
-  .container.price__container#precio
-    .content
-      .text-center.price__title
-        h4.mdc-typography--headline4 PRECIOS
-      .card__content
-        .card.card--normal
-          .card__title
-            h3.mdc-typography--headline3 GRATIS
-            pre.mdc-typography--caption POR UN MES
-          .card__price.card--normal__price
-            h1.mdc-typography--headline1 0
-          .card__features
-            ul
-              li Podrás gestionar las solicitudes en tu restaurante.
-              li Obtendrás QRS-Commande para cada una de tus mesas.
-          .card__action
-            button(class="botton mdc-button mdc-button--unelevated")
-              span(class="mdc-button__label") Pide un Demo
-        .card.card--premium
-          .card__title
-            h3.mdc-typography--headline3 PREMIUM
-            pre.mdc-typography--caption PAGO MENSUAL
-          .card__price
-            h1.mdc-typography--headline1 1
-            p Dólar por mesa.
-          .card__features
-            ul 
-              li Podrás gestionar las solicitudes en tu restaurante.
-              li Obtendrás QRS-Commande para cada una de tus mesas.
-              li Obtendrás ESTADÍSTICAS y podrás conocer a tus clientes a fondo.
-          .card__action
-            button(class="card__action--premium mdc-button mdc-button--unelevated")
-              span(class="mdc-button__label") SOLICITAR PREMIUM
+  //-include ../includes/precio
   include ../includes/contacto
 block footer
   include ../includes/footer

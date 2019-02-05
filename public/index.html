@@ -9,20 +9,17 @@
     <meta property="og:title" content="Commande">
     <meta property="og:description" content="Pagina inicial de Commande">
     <meta property="og:image" content="assets/svg/commande-logo.svg">
-    <link rel="stylesheet" href="assets/css/styles.css?t=1548990930006">
+    <link rel="stylesheet" href="assets/css/styles.css?t=1549331979854">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
     <div class="main-top-bar__container">
       <div class="main-top-bar__content">
-        <div class="branding"><img src="assets/svg/commande-logo.svg" alt="logo commande"></div>
+        <div class="branding"><a href="index.html"><img src="assets/svg/commande-logo.svg" alt="logo commande"></a></div>
         <div class="hamburger__box" id="js-hamburger-box"></div>
         <nav class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
           <ul>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="index.html" itemprop="name">Inicio</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="#nosotros" itemprop="name">Nosotros</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="#precios" itemprop="name">Precios</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button" href="/registrarse.html" itemprop="name">Registrarse</a></li>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button mdc-button--outlined" href="/" itemprop="name">Iniciar Sesión</a></li>
             <li class="main-menu__item" itemprop="url"><a class="main-menu__link mdc-button mdc-button--unelevated" href="./#contacto" itemprop="name">Contacto</a></li>
           </ul>
@@ -32,11 +29,13 @@
     <div class="container main__container">
       <div class="content main__content flex-col-cc">
         <div class="main__title text-center">
-          <h2 class="mdc-typography--headline2">Mejora la comunicación efectiva<br>con tus comensales</h2>
-          <p class="mdc-typography--body1">Somos un software para la gestión de solicitudes en restaurantes, bares y cafés,</p>
-          <p class="mdc-typography--body1">además podrás conocer a tus clientes y ofrecer atención personalizada.</p>
+          <h2 class="mdc-typography--headline3">Comunicación efectiva con tus Commensales</h2>
         </div>
         <div class="main__image"><img class="smartphone" src="assets/img/smartphone.jpg" alt="smartphone"><img class="main__image__img float" src="assets/img/float-cards.png" alt="float-cards"></div>
+        <div class="main__subtitle text-center">
+          <p class="mdc-typography--body1">Software para la gestión de solicitudes en restaurantes, bares y cafés,</p>
+          <p class="mdc-typography--body1">conoce mejor a tus comensales, atiendelos y fidelizalos.</p>
+        </div>
       </div>
     </div>
     <div class="container clients__container">
@@ -47,13 +46,15 @@
         <div class="grid-4-col"><img src="assets/img/protobar.png" alt="Protobar"><img src="assets/img/saratoga.png" alt="Saratoga"><img src="assets/img/pacto-arte-bar.png" alt="Pacto bar"><img src="assets/img/insert-coin.png" alt="Insert Coin"></div>
       </div>
     </div>
-    <div class="container bg-color-secondary" id="nosotros">
-      <div class="content flex-col-cc text-center">
-        <h4 class="mdc-typography--headline4 margin-bottom">Descubre cómo funciona y lo fácil que es</h4>
-        <div class="nosotros__video margin-bottom">
-          <iframe width="940" height="529" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container bg-color-secondary">
+      <div class="grid-2-col">
+        <div class="content flex-col-sc">
+          <h4 class="mdc-typography--headline4 margin-bottom">Descubre cómo funciona, <br> te va a encantar.</h4>
+          <button class="botton mdc-button mdc-button--unelevated"><span class="mdc-button__label">Pide un Demo</span></button>
         </div>
-        <button class="botton mdc-button mdc-button--unelevated"><span class="mdc-button__label">Pide un Demo</span></button>
+        <div class="nosotros__video margin-bottom">
+          <iframe width="640" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -62,65 +63,18 @@
         <div class="grid-3-col">
           <div class="box flex-col-ss"><img src="assets/img/analitica.png" alt="">
             <pre class="mdc-typography--caption">ESTADÍSTICAS Y ANÁLITICA</pre>
-            <h5 class="mdc-typography--headline5">Conoce a tu clientela y mejora tu relación con ellos.</h5>
-            <p class="mdc-typography--body1">Descubre los horarios en los que te visita, cuanto tiempo están disfrutando y crea promociones para que vuelvan una y otra vez.</p>
+            <h5 class="mdc-typography--headline6">Conoce a tu clientela y mejora tu relación con ellos.</h5>
+            <p class="mdc-typography--body2">Descubre los horarios en los que te visita, cuanto tiempo están disfrutando y crea promociones para que vuelvan una y otra vez.</p>
           </div>
           <div class="box flex-col-ss"><img src="assets/img/promociones.png" alt="">
             <pre class="mdc-typography--caption">PREMIOS Y PROMOCIONES</pre>
-            <h5 class="mdc-typography--headline5">Crea promociones y fideliza a tus clientes.</h5>
-            <p class="mdc-typography--body1">Puedes crear promociones especiales a todos tus clientes o cada cantidad de visitas poder canjear premios y beneficios exclusivos.</p>
+            <h5 class="mdc-typography--headline6">Crea promociones y fideliza a tus clientes.</h5>
+            <p class="mdc-typography--body2">Puedes crear promociones especiales a todos tus clientes o cada cantidad de visitas poder canjear premios y beneficios exclusivos.</p>
           </div>
           <div class="box flex-col-ss"><img src="assets/img/administracion.png" alt="">
             <pre class="mdc-typography--caption">ADMINISTRACIÓN Y GESTIÓN</pre>
-            <h5 class="mdc-typography--headline5">Registra cuanto tiempo esperan tus clientes para ser atendidos.</h5>
-            <p class="mdc-typography--body1">No dejes que ningún cliente se vaya por que nunca recibió atención o fue mal atendido.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container price__container" id="precio">
-      <div class="content">
-        <div class="text-center price__title">
-          <h4 class="mdc-typography--headline4">PRECIOS</h4>
-        </div>
-        <div class="card__content">
-          <div class="card card--normal">
-            <div class="card__title">
-              <h3 class="mdc-typography--headline3">GRATIS</h3>
-              <pre class="mdc-typography--caption">POR UN MES</pre>
-            </div>
-            <div class="card__price card--normal__price">
-              <h1 class="mdc-typography--headline1">0</h1>
-            </div>
-            <div class="card__features">
-              <ul>
-                <li>Podrás gestionar las solicitudes en tu restaurante.</li>
-                <li>Obtendrás QRS-Commande para cada una de tus mesas.</li>
-              </ul>
-            </div>
-            <div class="card__action">
-              <button class="botton mdc-button mdc-button--unelevated"><span class="mdc-button__label">Pide un Demo</span></button>
-            </div>
-          </div>
-          <div class="card card--premium">
-            <div class="card__title">
-              <h3 class="mdc-typography--headline3">PREMIUM</h3>
-              <pre class="mdc-typography--caption">PAGO MENSUAL</pre>
-            </div>
-            <div class="card__price">
-              <h1 class="mdc-typography--headline1">1</h1>
-              <p>Dólar por mesa.</p>
-            </div>
-            <div class="card__features">
-              <ul> 
-                <li>Podrás gestionar las solicitudes en tu restaurante.</li>
-                <li>Obtendrás QRS-Commande para cada una de tus mesas.</li>
-                <li>Obtendrás ESTADÍSTICAS y podrás conocer a tus clientes a fondo.</li>
-              </ul>
-            </div>
-            <div class="card__action">
-              <button class="card__action--premium mdc-button mdc-button--unelevated"><span class="mdc-button__label">SOLICITAR PREMIUM</span></button>
-            </div>
+            <h5 class="mdc-typography--headline6">Registra cuanto tiempo esperan tus clientes para ser atendidos.</h5>
+            <p class="mdc-typography--body2">No dejes que ningún cliente se vaya por que nunca recibió atención o fue mal atendido.</p>
           </div>
         </div>
       </div>
@@ -162,7 +116,7 @@
 </div>
 </div>
 <div class="mdc-text-field mdc-text-field--textarea js-contact-mensaje margin-bottom">
-<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+<textarea id="textarea" class="mdc-text-field__input" rows="6" cols="40"></textarea>
 <div class="mdc-notched-outline">
 <div class="mdc-notched-outline__leading"></div>
 <div class="mdc-notched-outline__notch">
@@ -171,7 +125,7 @@
 <div class="mdc-notched-outline__trailing"></div>
 </div>
 </div>
-              <button class="margin-bottom mdc-button mdc-button mdc-button--unelevated mdc-button--primary" href=""><span class="mdc-button__label">ENVÍAR</span></button>
+              <button class="margin-bottom mdc-button mdc-button mdc-button--unelevated mdc-button--primary" href=""><span class="mdc-button__label">ENVIAR</span></button>
             </div>
           </div>
           <div class="content contact__content bg-color-primary text-center">
@@ -201,6 +155,6 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/scripts-min.js?t=1548990930006"></script>
+    <script src="assets/js/scripts-min.js?t=1549331979854"></script>
   </body>
 </html>

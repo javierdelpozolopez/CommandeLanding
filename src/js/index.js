@@ -17,12 +17,12 @@ const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
 import {MDCTextField} from '@material/textfield';
 
-const textField = new MDCTextField(document.querySelector('.js-registro-nombre'));
-const textField2 = new MDCTextField(document.querySelector('.js-form-correo'));
-const textField3 = new MDCTextField(document.querySelector('.js-form-pass'));
-const textField4 = new MDCTextField(document.querySelector('.js-form-confirm-pass'));
-const textField5 = new MDCTextField(document.querySelector('.js-form-local'));
-const textField6 = new MDCTextField(document.querySelector('.js-form-mesas'));
+//const textField = new MDCTextField(document.querySelector('.js-registro-nombre'));
+//const textField2 = new MDCTextField(document.querySelector('.js-form-correo'));
+//const textField3 = new MDCTextField(document.querySelector('.js-form-pass'));
+//const textField4 = new MDCTextField(document.querySelector('.js-form-confirm-pass'));
+//const textField5 = new MDCTextField(document.querySelector('.js-form-local'));
+//const textField6 = new MDCTextField(document.querySelector('.js-form-mesas'));
 const textField7 = new MDCTextField(document.querySelector('.js-contact-nombre'));
 const textField8 = new MDCTextField(document.querySelector('.js-contact-telefono'));
 const textField9 = new MDCTextField(document.querySelector('.js-contact-correo'));

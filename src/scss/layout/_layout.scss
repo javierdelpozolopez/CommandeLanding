@@ -23,6 +23,9 @@
 .flex-col-ss{
     @include flex(column,flex-start,flex-start);
 }
+.flex-col-sc{
+    @include flex(column,flex-start,center);
+}
 
 .main__image{
     position: relative;
@@ -82,13 +85,14 @@
 .box{
     img{
         width: 100%;
+        max-width: 280px;
         padding-bottom: 16px;
     }
     pre{
-        padding-bottom: 16px;
+        padding-bottom: 8px;
     }
     h5{
-        padding-bottom: 16px;
+        padding-bottom: 8px;
     }
     img,pre,p,h5{
         padding-left: 17px;
@@ -197,4 +201,14 @@
 
 .contact__img{
         margin: 0 auto;
+}
+.contact__content{
+    @media only screen and (max-width: $small){
+        h6,p{
+            padding: .7em 0;
+        }
+        img{
+            max-width: 90px;
+        }
+    }
 }

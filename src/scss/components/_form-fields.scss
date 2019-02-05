@@ -29,6 +29,14 @@
 .margin-bottom{
     margin-bottom: 1em;
 }
+
+.form__container{
+    background-image: url("../img/bg-price.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+}
 .form__content{
     border-radius: 4px 0px 0px 4px;
     padding: 2em;
@@ -51,4 +59,5 @@
 }
 .mdc-text-field{
     width: 100%;
+    max-width: 250px;
 }
