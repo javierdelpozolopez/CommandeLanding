@@ -108,6 +108,9 @@
     @media only screen and (max-width: $small){
         padding: 3em 1em;
     }
+    img{
+        width: 210px;
+    }
 }
 
 .price{
@@ -211,4 +214,9 @@
             max-width: 90px;
         }
     }
+}
+.container__video{
+    position: relative;
+    background-image: url('../svg/trama.svg');
+    background-repeat: no-repeat;
 }

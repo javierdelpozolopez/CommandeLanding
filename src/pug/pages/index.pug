@@ -27,14 +27,15 @@ block main
           img(src="assets/img/pacto-arte-bar.png", alt="Pacto bar")
           img(src="assets/img/insert-coin.png", alt="Insert Coin")
 
-  .container.bg-color-secondary
-    .grid-2-col
-      .content.flex-col-sc
-        h4.mdc-typography--headline4.margin-bottom Descubre cómo funciona, <br> te va a encantar.
-        button(class="botton mdc-button mdc-button--unelevated")
-          span(class="mdc-button__label") Pide un Demo
-      .nosotros__video.margin-bottom
-        iframe(width="640" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  .container.bg-color-secondary.container__video
+    .content
+      .grid-2-col
+        .flex-col-sc
+          h4.mdc-typography--headline4.margin-bottom Descubre como funciona, <br> te va a encantar.
+          button(class="botton mdc-button mdc-button--unelevated")
+            span(class="mdc-button__label") Pide un Demo
+        .nosotros__video.margin-bottom
+          iframe(width="640" height="480" src="https://www.youtube.com/embed/svH3LW5J36M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 
   .container
