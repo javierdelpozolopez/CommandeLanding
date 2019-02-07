@@ -14,7 +14,7 @@ const hamburgerMenu = document.createElement('div');
 hamburgerMenu.classList.add('mdc-button');
 
 const iconMenu = new Image();
-iconMenu.src = '/assets/img/ic_menu_white_36pt.png';
+iconMenu.src = './assets/img/ic_menu_white_36pt.png';
 
 hamburgerMenu.innerHTML = `
 <img src="${iconMenu.src}" alt="Menu"/>

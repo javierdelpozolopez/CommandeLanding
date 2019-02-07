@@ -27,29 +27,6 @@
     @include flex(column,flex-start,center);
 }
 
-.main__image{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.float{
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.main__image__img{
-    width: 100%;
-    @media only screen and (max-width: $small){
-        width: 95%;
-    }
-}
-.smartphone{
-    width: 420px;
-    @media only screen and (max-width: $small){
-        width: 150px;
-    }
-}
 .text-center{
     text-align: center;
 }
@@ -82,7 +59,15 @@
 .no-gap{
     grid-gap: 0px;
 }
+.big-gap{
+    grid-gap: 70px;
+    @media only screen and (max-width: $small){
+        grid-gap: 38px;
+    }
+}
 .box{
+    max-width: 290px;
+    margin: 0 auto;
     img{
         width: 100%;
         max-width: 280px;
@@ -109,7 +94,7 @@
         padding: 3em 1em;
     }
     img{
-        width: 210px;
+        max-width: 210px;
     }
 }
 
